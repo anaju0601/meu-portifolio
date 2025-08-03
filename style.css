@@ -301,10 +301,10 @@ code {
 
   .iframe-na-moldura {
     position: absolute;
-    top: 23px;
+    top: 10%;
     left: 15px;
     width: 25px;
-    height: 40px;
+    height: 20%;
     border: none;
     border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
