@@ -301,15 +301,13 @@ code {
 
   .iframe-na-moldura {
     position: absolute;
-    top: 69px;
-    left: 75px;
-    width: 300px;
-    height: 565px;
+    top: 17.6%;
+    left: 22%;
+    width: 56%;
+    height: 64%;
     border: none;
-    border-radius: 28px;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
-    overflow: hidden;
-    z-index: 1;
+    border-radius: 16px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
   }
 
   .imagem-moldura {
@@ -318,9 +316,10 @@ code {
     left: 0;
     width: 100%;
     height: auto;
+    transform: scaleY(0.90);
     border-radius: 20px;
-    object-fit: cover;
-    z-index: 1;
+    z-index: 2;
+    pointer-events: none;
   }
 
   .iframe-na-moldura {
