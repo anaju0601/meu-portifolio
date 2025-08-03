@@ -289,22 +289,50 @@ code {
     pointer-events: none;
 }
 
+/*celular*/
 @media (max-width: 768px) {
-    body {
-        margin: 0;
-        padding: 0;
-        display: flex;
-        justify-content: center; 
-        align-items: start;      
-        overflow-x: hidden;
-        background: #0f0d22;
-    }
-
   .moldura-container {
-    transform: scale(0.5);
-    transform-origin: top center;
-    height: 800px;
-    width: 700px;
+    width: 100%;
+    max-width: 360px;
+    aspect-ratio: 7 / 8; 
+    margin: 2rem auto;
     position: relative;
+  }
+
+  .iframe-na-moldura {
+    top: 10.5%;
+    left: 11%;
+    width: 78%;
+    height: 72%;
+    position: absolute;
+    border-radius: 20px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
+  }
+
+  .imagem-moldura {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    transform: scaleY(0.9);
+  }
+}
+
+/*tablet*/
+@media (max-width: 1024px) {
+  .container {
+    margin: 20px;
+    padding: 1rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .conteudo-sobre {
+    flex-direction: column;
   }
 }
