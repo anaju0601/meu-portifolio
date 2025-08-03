@@ -312,12 +312,12 @@ code {
 
   .imagem-moldura {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: auto;
-    border-radius: 20px;
-    object-fit: cover;
+    top: 17.6%;
+    left: 22%;
+    width: 56%;
+    height: 64%;
+    border-radius: 16px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
     z-index: 1;
   }
 
