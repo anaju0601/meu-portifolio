@@ -294,20 +294,21 @@ code {
   .moldura-container {
     width: 100%;
     max-width: 360px;
-    aspect-ratio: 9 / 16; 
+    aspect-ratio: 9 / 16;
     margin: 2rem auto;
     position: relative;
   }
 
   .iframe-na-moldura {
     position: absolute;
-    top: 17.6%;
-    left: 22%;
-    width: 56%;
-    height: 64%;
+    top: 12.2%;
+    left: 10.4%;
+    width: 79.2%;
+    height: 74.6%;
     border: none;
-    border-radius: 16px;
+    border-radius: 18px;
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
+    z-index: 0;
   }
 
   .imagem-moldura {
@@ -316,13 +317,9 @@ code {
     left: 0;
     width: 100%;
     height: auto;
-    transform: scaleY(0.90);
+    transform: scaleY(1);
     border-radius: 20px;
     z-index: 2;
     pointer-events: none;
-  }
-
-  .iframe-na-moldura {
-    z-index: 0;
   }
 }
