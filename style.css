@@ -275,39 +275,32 @@ code {
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
   overflow: hidden;
   z-index: 1;
-  touch-action: auto;
-  pointer-events: auto;
 }
 
 .imagem-moldura {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: auto;
-  transform: scaleY(0.90);
-  border-radius: 20px;
-  z-index: 2;
-  pointer-events: none;
-}
-
-@media screen and (max-width: 600px) {
-  .moldura-container {
-    width: 90vw;
-    height: auto;
-    aspect-ratio: 7 / 8;
-  }
-
-  .iframe-na-moldura {
-    top: 9.8%;
-    left: 10.7%;
-    width: 42.8%;
-    height: 70.6%;
-  }
-
-  .imagem-moldura {
-    transform: none;
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: auto;
-  }
+    transform: scaleY(0.90);
+    border-radius: 20px;
+    z-index: 2;
+    pointer-events: none;
+}
+
+@media (max-width: 768px) {
+    .moldura-container {
+        transform: scale(0.5); 
+        transform-origin: top center;
+        margin-top: 0;
+        margin-bottom: 0;
+        height: 800px;
+        width: 700px;
+        overflow: hidden;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
 }
