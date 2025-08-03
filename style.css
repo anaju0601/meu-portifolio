@@ -301,9 +301,9 @@ code {
 
   .iframe-na-moldura {
     position: absolute;
-    top: 6,9px;
+    top: 20px;
     left: 7,5px;
-    width: 30px;
+    width: 25px;
     height: 56,6px;
     border: none;
     border-radius: 20px;
