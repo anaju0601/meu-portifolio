@@ -302,12 +302,12 @@ code {
   .iframe-na-moldura {
     position: absolute;
     top: 12.2%;
-    left: 10.4%;
-    width: 79.2%;
-    height: 74.6%;
+    left: 18.5%; 
+    width: 63%;
+    height: 76.5%;
     border: none;
-    border-radius: 18px;
-    box-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
     z-index: 0;
   }
 
@@ -317,7 +317,6 @@ code {
     left: 0;
     width: 100%;
     height: auto;
-    transform: scaleY(1);
     border-radius: 20px;
     z-index: 2;
     pointer-events: none;
