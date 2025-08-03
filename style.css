@@ -256,3 +256,26 @@ code {
 .container .botao:hover {
     background-color: #7b2cbf;
 }
+
+.celular-moldura {
+    position: relative;
+    width: 300px;
+    height: 620px;
+    background-image: url('../imgs/moldura.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 2rem auto;
+    box-shadow: 0 0 20px rgba(155, 93, 229, 0.3);
+}
+
+.iframe-site-ajustada {
+    position: absolute;
+    top: 63px;    
+    left: 21px;  
+    width: 258px;
+    height: 495px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+}
