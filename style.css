@@ -257,25 +257,34 @@ code {
     background-color: #7b2cbf;
 }
 
-.celular-moldura {
-    position: relative;
-    width: 300px;
-    height: 620px;
-    background-image: url('../imgs/moldura.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin: 2rem auto;
-    box-shadow: 0 0 20px rgba(155, 93, 229, 0.3);
+.moldura-container {
+  position: relative;
+  width: 700px;
+  height: 800px;
+  margin: 2rem auto;
 }
 
-.iframe-site-ajustada {
-    position: absolute;
-    top: 63px;    
-    left: 21px;  
-    width: 258px;
-    height: 495px;
-    border: none;
-    border-radius: 20px;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+.iframe-na-moldura {
+  position: absolute;
+  top: 69px;
+  left: 75px;
+  width: 300px;
+  height: 565px;
+  border: none;
+  border-radius: 28px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+  z-index: 1; 
+}
+
+.imagem-moldura {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  transform: scaleY(0.90);
+  border-radius: 20px;
+  z-index: 2; 
+  pointer-events: none; 
 }
