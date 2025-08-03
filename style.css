@@ -275,8 +275,6 @@ code {
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
   overflow: hidden;
   z-index: 1;
-  touch-action: auto;
-  pointer-events: auto;
 }
 
 .imagem-moldura {
@@ -291,23 +289,68 @@ code {
   pointer-events: none;
 }
 
-@media screen and (max-width: 600px) {
+/* ✅ Tornar tudo escalável no celular */
+@media (max-width: 768px) {
   .moldura-container {
-    width: 90vw;
-    height: auto;
-    aspect-ratio: 7 / 8;
+    transform: scale(0.5); /* Ajuste aqui conforme necessário */
+    transform-origin: top center;
+    margin-top: 0;
+    margin-bottom: 0;
+    height: 800px;
+    width: 700px;
+    overflow: hidden;
   }
 
-  .iframe-na-moldura {
-    top: 9.8%;
-    left: 10.7%;
-    width: 42.8%;
-    height: 70.6%;
+  body {
+    overflow-x: hidden;
+  }
+}
+.moldura-container {
+  position: relative;
+  width: 700px;
+  height: 800px;
+  margin: 2rem auto;
+}
+
+.iframe-na-moldura {
+  position: absolute;
+  top: 69px;
+  left: 75px;
+  width: 300px;
+  height: 565px;
+  border: none;
+  border-radius: 28px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+  z-index: 1;
+}
+
+.imagem-moldura {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  transform: scaleY(0.90);
+  border-radius: 20px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+@media (max-width: 768px) {
+  .moldura-container {
+    transform: scale(0.5); 
+    transform-origin: top center;
+    height: 800px;
+    width: 700px;
+    overflow: hidden;
+
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
   }
 
-  .imagem-moldura {
-    transform: none;
-    width: 100%;
-    height: auto;
+  body {
+    overflow-x: hidden;
   }
 }
