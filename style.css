@@ -301,12 +301,12 @@ code {
 
   .iframe-na-moldura {
     position: absolute;
-    top: 20px;
-    left: 20px;
-    width: 60px;
-    height: 80px;
+    top: 6.5%;        /* Subiu mais */
+    left: 13.5%;      /* Recuou para que o lado direito pare no meio da imagem */
+    width: 73%;       /* Largura aumentada para preencher toda a tela do celular */
+    height: 81%;      /* Altura proporcional à tela branca da moldura */
     border: none;
-    border-radius: 20px;
+    border-radius: 24px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
     z-index: 0;
   }
