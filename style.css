@@ -301,7 +301,7 @@ code {
 
   .iframe-na-moldura {
     position: absolute;
-    top: 20%;        /* Subiu mais */
+    top: 2%;        /* Subiu mais */
     left: 13%;      /* Recuou para que o lado direito pare no meio da imagem */
     width: 73%;       /* Largura aumentada para preencher toda a tela do celular */
     height: 250%;      /* Altura proporcional à tela branca da moldura */
