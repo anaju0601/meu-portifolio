@@ -330,9 +330,9 @@ code {
   .iframe-na-moldura {
     position: absolute;
     top: 25%; /* Ajuste fino da posição vertical */
-    left: 20%; /* Ajuste fino da posição horizontal */
-    width: 90%; /* Ajuste fino da largura */
-    height: 80%; /* Ajuste fino da altura */
+    left: 30%; /* Ajuste fino da posição horizontal */
+    width: 150%; /* Ajuste fino da largura */
+    height: 100%; /* Ajuste fino da altura */
     border: none;
     border-radius: 38px; /* Refinei o border-radius para as bordas da tela */
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
