@@ -269,7 +269,7 @@ code {
     top: 69px;
     left: 75px;
     width: 300px;
-    height: 565px;
+    height: 566px;
     border: none;
     border-radius: 28px;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
@@ -291,35 +291,50 @@ code {
 
 /* celular */
 @media (max-width: 768px) {
+
+    header h1 {
+    font-size: 1.8rem;
+  }
+  nav ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .container {
+    padding: 1rem;
+    margin: 20px;
+  }
+
   .moldura-container {
     width: 100%;
     max-width: 360px;
-    aspect-ratio: 9 / 16; 
+    height: 600px;
+    aspect-ratio: 9/16;
     margin: 2rem auto;
     position: relative;
   }
-
-  .iframe-na-moldura {
-    position: absolute;
-    top: 19.17%;
-    left: 20.83%;
-    width: 83.33%;
-    height: 88.28%; 
-    border: none;
-    border-radius: 28px;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
-    overflow: hidden;
-    z-index: 1;
-  }
-
+  
   .imagem-moldura {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: auto;
-    border-radius: 20px;
+    height: 100%;
+    object-fit: contain; 
     z-index: 2;
     pointer-events: none;
+    transform: none; 
+  }
+
+  .iframe-na-moldura {
+    position: absolute;
+    top: 10.3%;
+    left: 10.3%;
+    width: 79.5%;
+    height: 77%;
+    border: none;
+    border-radius: 28px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+    overflow: hidden;
+    z-index: 1;
   }
 }
