@@ -291,24 +291,13 @@ code {
 
 /* celular */
 @media (max-width: 768px) {
-
-    header h1 {
-    font-size: 1.8rem;
-  }
-  nav ul {
-    flex-direction: column;
-    gap: 1rem;
-  }
-  .container {
-    padding: 1rem;
-    margin: 20px;
-  }
+  /* ... outros estilos que você já tem para celular ... */
 
   .moldura-container {
     width: 100%;
-    max-width: 360px;
-    height: 600px;
-    aspect-ratio: 9/16;
+    max-width: 360px; /* Ou qualquer tamanho que você preferir para o celular */
+    height: auto; /* Deixa a altura se ajustar automaticamente */
+    aspect-ratio: 479 / 990; /* Essa é a proporção da sua imagem, ou algo muito próximo disso */
     margin: 2rem auto;
     position: relative;
   }
@@ -319,20 +308,19 @@ code {
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: contain; 
+    object-fit: contain;
     z-index: 2;
     pointer-events: none;
-    transform: none; 
   }
 
   .iframe-na-moldura {
     position: absolute;
-    top: 10.3%;
-    left: 10.3%;
-    width: 79.5%;
-    height: 77%;
+    top: 6%; /* Ajuste a posição vertical do topo */
+    left: 8.5%; /* Ajuste a posição horizontal da esquerda */
+    width: 83%; /* Ajuste a largura para preencher a tela */
+    height: 87.5%; /* Ajuste a altura para preencher a tela */
     border: none;
-    border-radius: 28px;
+    border-radius: 40px; /* Aumentei o border-radius para encaixar na borda arredondada */
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
     overflow: hidden;
     z-index: 1;
