@@ -291,13 +291,26 @@ code {
 
 /* celular */
 @media (max-width: 768px) {
-  /* ... outros estilos que você já tem para celular ... */
+@media (max-width: 768px) {
+  /* Estilos para o cabeçalho e navegação */
+  header h1 {
+    font-size: 1.8rem;
+  }
+  nav ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .container {
+    padding: 1rem;
+    margin: 20px;
+  }
 
+  /* Ajustes para a moldura e o iframe */
   .moldura-container {
     width: 100%;
     max-width: 360px; /* Ou qualquer tamanho que você preferir para o celular */
-    height: auto; /* Deixa a altura se ajustar automaticamente */
-    aspect-ratio: 479 / 990; /* Essa é a proporção da sua imagem, ou algo muito próximo disso */
+    height: auto;
+    aspect-ratio: 479 / 990; 
     margin: 2rem auto;
     position: relative;
   }
@@ -311,16 +324,17 @@ code {
     object-fit: contain;
     z-index: 2;
     pointer-events: none;
+    transform: none;
   }
 
   .iframe-na-moldura {
     position: absolute;
-    top: 6%; /* Ajuste a posição vertical do topo */
-    left: 8.5%; /* Ajuste a posição horizontal da esquerda */
-    width: 83%; /* Ajuste a largura para preencher a tela */
-    height: 87.5%; /* Ajuste a altura para preencher a tela */
+    top: 11.6%; /* Ajuste fino da posição vertical */
+    left: 9.3%; /* Ajuste fino da posição horizontal */
+    width: 81.5%; /* Ajuste fino da largura */
+    height: 75.5%; /* Ajuste fino da altura */
     border: none;
-    border-radius: 40px; /* Aumentei o border-radius para encaixar na borda arredondada */
+    border-radius: 38px; /* Refinei o border-radius para as bordas da tela */
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
     overflow: hidden;
     z-index: 1;
