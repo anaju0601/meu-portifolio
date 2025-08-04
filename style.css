@@ -329,8 +329,8 @@ code {
 
   .iframe-na-moldura {
     position: absolute;
-    top: 15%; /* Ajuste fino da posição vertical */
-    left: 20%; /* Ajuste fino da posição horizontal */
+    top: 30%; /* Ajuste fino da posição vertical */
+    left: 25%; /* Ajuste fino da posição horizontal */
     width: 81.5%; /* Ajuste fino da largura */
     height: 75.5%; /* Ajuste fino da altura */
     border: none;
