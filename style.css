@@ -328,9 +328,9 @@ code {
 
   .iframe-na-moldura {
     position: absolute;
-    top: 7%; /* Ajuste fino da posição vertical */
+    top: 20%; /* Ajuste fino da posição vertical */
     left: 7.5%; /* Deslocado um pouco para a esquerda */
-    width: 100%; /* Ajustado para preencher a largura */
+    width: 40%; /* Ajustado para preencher a largura */
     height: 55%; /* Ajustado para preencher a altura */
     border: none;
     border-radius: 28px; /* Mantido para as bordas da tela */
