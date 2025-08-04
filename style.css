@@ -259,21 +259,21 @@ code {
 
 .moldura-container {
     position: relative;
-    max-width: 700px; /* Limita a largura máxima no desktop */
-    width: 90%; /* O container vai ocupar 90% da largura da tela */
+    max-width: 900px; 
+    width: 90%;
     margin: 2rem auto;
-    aspect-ratio: 700 / 800; /* Mantém a proporção de 700x800px em todas as telas */
-    height: auto; /* A altura se ajusta automaticamente com o aspect-ratio */
+    aspect-ratio: 700 / 800;
+    height: auto;
 }
 
 .iframe-na-moldura {
     position: absolute;
-    top: 5%;  /* (69px / 800px) * 100 */
-    left: 10.71%; /* (75px / 700px) * 100 */
-    width: 43.2%; /* (300px / 700px) * 100 */
-    height: 76%; /* (566px / 800px) * 100 */
+    top: 5%; 
+    left: 9%; 
+    width: 45%; 
+    height: 78%; 
     border: none;
-    border-radius: 28px;
+    border-radius: 40px; 
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
     overflow: hidden;
     z-index: 1;
@@ -284,10 +284,46 @@ code {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%; /* Ajustado para 100% para ocupar o container */
+    height: 100%;
     object-fit: contain;
-    transform: none; /* Removido para evitar desalinhamento */
+    transform: none;
     border-radius: 20px;
     z-index: 2;
     pointer-events: none;
+}
+
+@media (max-width: 768px) {
+  .moldura-container {
+    max-width: 360px;
+    width: 90%;
+    height: auto;
+    aspect-ratio: 479 / 990;
+    margin: 2rem auto;
+    position: relative;
+  }
+  
+  .imagem-moldura {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    z-index: 2;
+    pointer-events: none;
+    transform: none;
+  }
+
+  .iframe-na-moldura {
+    position: absolute;
+    top: 10.3%;
+    left: 7.5%;
+    width: 85%;
+    height: 78%;
+    border: none;
+    border-radius: 38px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+    overflow: hidden;
+    z-index: 1;
+  }
 }
