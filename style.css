@@ -259,17 +259,19 @@ code {
 
 .moldura-container {
     position: relative;
-    width: 700px;
-    height: 800px;
+    max-width: 700px; /* Limita a largura máxima no desktop */
+    width: 90%; /* O container vai ocupar 90% da largura da tela */
     margin: 2rem auto;
+    aspect-ratio: 700 / 800; /* Mantém a proporção de 700x800px em todas as telas */
+    height: auto; /* A altura se ajusta automaticamente com o aspect-ratio */
 }
 
 .iframe-na-moldura {
     position: absolute;
-    top: 69px;
-    left: 75px;
-    width: 300px;
-    height: 566px;
+    top: 5%;  /* (69px / 800px) * 100 */
+    left: 10.71%; /* (75px / 700px) * 100 */
+    width: 43.2%; /* (300px / 700px) * 100 */
+    height: 76%; /* (566px / 800px) * 100 */
     border: none;
     border-radius: 28px;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
@@ -282,60 +284,10 @@ code {
     top: 0;
     left: 0;
     width: 100%;
-    height: auto;
-    transform: scaleY(0.90);
+    height: 100%; /* Ajustado para 100% para ocupar o container */
+    object-fit: contain;
+    transform: none; /* Removido para evitar desalinhamento */
     border-radius: 20px;
     z-index: 2;
     pointer-events: none;
-}
-
-/* celular */
-@media (max-width: 768px) {
-  /* Estilos para o cabeçalho e navegação */
-  header h1 {
-    font-size: 1.8rem;
-  }
-  nav ul {
-    flex-direction: column;
-    gap: 1rem;
-  }
-  .container {
-    padding: 1rem;
-    margin: 20px;
-  }
-
-  /* Ajustes para a moldura e o iframe */
-  .moldura-container {
-    width: 100%;
-    max-width: 360px; /* Mantém a largura máxima em 360px para melhor visualização em mobile */
-    height: auto;
-    aspect-ratio: 479 / 990; /* Proporção da sua imagem */
-    margin: 2rem auto;
-    position: relative;
-  }
-  
-  .imagem-moldura {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 50%; /* Ajustado para 100% para ocupar o container */
-    object-fit: contain;
-    z-index: 2;
-    pointer-events: none;
-    transform: none; /* Removido para evitar desalinhamento */
-  }
-
-  .iframe-na-moldura {
-    position: absolute;
-    top: 25%; /* Ajuste fino da posição vertical */
-    left: 7.5%; /* Deslocado um pouco para a esquerda */
-    width: 42%; /* Ajustado para preencher a largura */
-    height: 23%; /* Ajustado para preencher a altura */
-    border: none;
-    border-radius: 28px; /* Mantido para as bordas da tela */
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
-    overflow: hidden;
-    z-index: 1;
-  }
 }
