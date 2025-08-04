@@ -294,21 +294,22 @@ code {
   .moldura-container {
     width: 100%;
     max-width: 360px;
-    aspect-ratio: 9 / 16;
+    aspect-ratio: 9 / 16; 
     margin: 2rem auto;
     position: relative;
   }
 
   .iframe-na-moldura {
     position: absolute;
-    top: 29%;        /* Subiu mais */
-    left: 13%;      /* Recuou para que o lado direito pare no meio da imagem */
-    width: 73%;       /* Largura aumentada para preencher toda a tela do celular */
-    height: 250%;      /* Altura proporcional à tela branca da moldura */
+    top: 19.17%;
+    left: 20.83%;
+    width: 83.33%;
+    height: 88.28%; 
     border: none;
-    border-radius: 24px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-    z-index: 0;
+    border-radius: 28px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+    overflow: hidden;
+    z-index: 1;
   }
 
   .imagem-moldura {
