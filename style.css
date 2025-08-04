@@ -330,8 +330,8 @@ code {
     position: absolute;
     top: 10.3%; /* Ajuste fino da posição vertical */
     left: 7.5%; /* Deslocado um pouco para a esquerda */
-    width: 80%; /* Ajustado para preencher a largura */
-    height: 55%; /* Ajustado para preencher a altura */
+    width: 90%; /* Ajustado para preencher a largura */
+    height: 60%; /* Ajustado para preencher a altura */
     border: none;
     border-radius: 38px; /* Mantido para as bordas da tela */
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
