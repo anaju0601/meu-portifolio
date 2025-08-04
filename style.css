@@ -328,10 +328,10 @@ code {
 
   .iframe-na-moldura {
     position: absolute;
-    top: 10.3%; /* Ajustado para posicionar no topo da tela do celular */
-    left: 9.7%; /* Ajustado para posicionar na lateral esquerda da tela */
-    width: 80.5%; /* Ajustado para preencher a largura da tela */
-    height: 75.3%; /* Ajustado para preencher a altura da tela */
+    top: 10.3%; /* Ajuste fino da posição vertical */
+    left: 7.5%; /* Deslocado um pouco para a esquerda */
+    width: 85%; /* Ajustado para preencher a largura */
+    height: 78%; /* Ajustado para preencher a altura */
     border: none;
     border-radius: 38px; /* Mantido para as bordas da tela */
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
