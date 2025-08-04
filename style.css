@@ -331,7 +331,7 @@ code {
     top: 10.3%; /* Ajuste fino da posição vertical */
     left: 7.5%; /* Deslocado um pouco para a esquerda */
     width: 85%; /* Ajustado para preencher a largura */
-    height: 45%; /* Ajustado para preencher a altura */
+    height: 50%; /* Ajustado para preencher a altura */
     border: none;
     border-radius: 38px; /* Mantido para as bordas da tela */
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
