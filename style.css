@@ -323,19 +323,19 @@ code {
     object-fit: contain;
     z-index: 2;
     pointer-events: none;
-    transform: none; 
+    transform: none; /* Removido para evitar desalinhamento */
   }
 
-    .iframe-na-moldura {
-        position: absolute;
-        top: 10.3%; 
-        left: 7.5%; 
-        width: 80%; 
-        height: 74%;
-        border: none;
-        border-radius: 38px;
-        box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
-        overflow: hidden;
-        z-index: 1;
-    }
+  .iframe-na-moldura {
+    position: absolute;
+    top: 10.3%; /* Ajuste fino da posição vertical */
+    left: 7.5%; /* Deslocado um pouco para a esquerda */
+    width: 85%; /* Ajustado para preencher a largura */
+    height: 70%; /* Ajustado para preencher a altura */
+    border: none;
+    border-radius: 38px; /* Mantido para as bordas da tela */
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+    overflow: hidden;
+    z-index: 1;
+  }
 }
