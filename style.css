@@ -257,6 +257,8 @@ code {
     background-color: #7b2cbf;
 }
 
+
+/*Cardapio*/
 .moldura-container {
     position: relative;
     max-width: 900px; 
@@ -269,8 +271,8 @@ code {
 .iframe-na-moldura {
     position: absolute;
     top: 5%; 
-    left: 9%; 
-    width: 45%; 
+    left: 10%; 
+    width: 44%; 
     height: 78%; 
     border: none;
     border-radius: 40px; 
