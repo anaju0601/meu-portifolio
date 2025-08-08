@@ -405,3 +405,73 @@ code {
         flex-direction: column;
     }
 }
+
+/*Certificados*/
+.certificados-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.card-certificados {
+    width: 300px;
+    height: 200px;
+    perspective: 1000px;
+}
+
+.card-certificados-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8;
+    transform-style: preserve-3d;
+}
+
+.card-certificados:hover .card-certificados-inner {
+    transform: rotateY(180deg);
+}
+
+.card-certificados-front,
+.card-certificados-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+/*Certificados-frente*/
+.card-certificados-front {
+    background: linear-gradient(135deg, #9b5de5, #4e2a84);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.card-certificados-front h3 {
+    margin-bottom: 10px;
+}
+
+.card-certificados-front p {
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+/*Certificados-verso*/
+.card-certificados-back {
+    background-color: #1e1e2f;
+    transform: rotateY(180deg);
+}
+
+.card-certificados-back img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
