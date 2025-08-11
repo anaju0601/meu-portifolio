@@ -9,47 +9,71 @@
 </head>
 <body>
     <header>
-        <h1>Ana Júlia Morais Moreira</h1>
         <nav>
             <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="projetos.html">Projetos</a></li>
-                <li><a href="contato.html">Contato</a></li>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="projetos">Projetos</a></li>
+                <li><a href="contato">Contato</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
+    <main id="inicio">
         <section class="sobre">
-            <h2>Sobre mim</h2>
+            <h2>Ana Júlia Morais</h2>
             <div class="conteudo-sobre">
                 <img src="imgs/perfil.jpeg" alt="Minha foto de perfil">
                 <div class="texto-sobre">
                     <p>Sou estudante de Ciência da Computação. Já criei projetos com HTML, CSS, FrameWork, SQLite, NoSQL, MySQL, Maui.NET em Xaml, Notion API e estou em busca de aprender mais.</p>
                     <p>💡 Áreas de interesse: Front-end, Banco de dados, Mobile e automações.</p>
-                    <p>
-                        🔗 <a href="https://github.com/anaju0601" target="_blank">GitHub</a> | 
-                        💼 <a href="https://www.linkedin.com/in/ana-júlia-morais-b5b447261/" target="_blank">Linkedin</a>
-                    </p>
                 </div>
             </div>
         </section>
     </main>
 
-    <section>
-        <h2>Certificados</h2>
-        <div class="card-mural">
-            <div class="card-mural-inner">
-                <div class="card-mural-front">
-                    <h3>Curso MySQL</h3>
-                    <P>Concuído em 2025</P>
+        <main id="projetos"> 
+            <section class="projetos">
+                <div class="card">
+                    <img src="imgs/cassandra.png" alt="Cassandra Imagem" class="card-img">
+                    <h3>📦 Cluster Cassandra</h3>
+                    <p>Eu e meu grupo criamos um banco de dados com 3 nós no Docker utilizando a imagem Cassandra.</p>
+                    <p><strong>Tecnologias:</strong> Docker</p>
+                    <a class="botao" href="projetos/cluster-cassandra.html">🔗 Ver Projeto</a>
                 </div>
-                <div class="card-mural-back">
-                    <img src="imgs/certificadoMySQL.png" alt="Certificado MySQL">
+
+                <div class="card">
+                    <img src="imgs/redis.png" alt="Redis Imagem" class="card-img">
+                    <h3>📦 Cluster Redis</h3>
+                    <p>Eu e meu grupo criamos um banco de dados com 6 nós no Docker utilizando a imagem Redis.</p>
+                    <p><strong>Tecnologias:</strong> Vs Code, Docker</p>
+                    <a class="botao" href="projetos/cluster-redis.html" >🔗 Ver Projeto</a>
                 </div>
-            </div>
-        </div>
-    </section>
+
+                <div class="card">
+                    <img src="imgs/mongodb.png" alt="" class="card-img">
+                    <h3>📦 Cluster MongoDB</h3>
+                    <p>Eu e meu grupo criamos um banco de dados com 4 nós no Docker utilizando o MongoDB.</p>
+                    <p><strong>Tecnologias:</strong> Docker, MongoDB</p>
+                    <a class="botao" href="projetos/cluster-mongodb.html" >🔗 Ver Projeto</a>
+                </div>
+
+                <div class="card">
+                    <img src="imgs/cardapio-logo.png" alt="" class="card-img">
+                    <h3>🍽 Cardápio Digital</h3>
+                    <p>Site de cardápio digital com HTML, CSS e frameworks. CI/CD com GitHub Actions e deploy no Azure via Azure for Students.</p>
+                    <p><strong>Tecnologias:</strong> HTML, CSS, CI/CD, Azure, SonarQube</p>
+                    <a class="botao" href="projetos/cardapio-digital.html" >🔗 Ver Projeto</a>
+                </div>
+
+                <div class="card">
+                    <img src="imgs/logotrans.png" alt="" class="card-img">
+                    <h3>📱 Cadastro de Veículos (Mobile)</h3>
+                    <p>Aplicativo com banco de dados SQLite. Os dados inseridos em cada página são salvos e recuperados no cadastro final.</p>
+                    <p><strong>Tecnologias:</strong> .NET MAUI, XAML, C#, SQLite</p>
+                    <a class="botao" href="projetos/cadastro-veiculos.html" >🔗 Ver Projeto</a>
+                </div>
+            </section>
+        </main>
 
     <footer>
         <p>© 2025 - Ana Júlia Morais Moreira</p>
