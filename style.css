@@ -28,7 +28,7 @@ header {
     position: fixed;
     width: 100%;
     background: rgba(15, 23, 42, 0.8);
-    z-index: 100%;
+    z-index: 100;
     color: #9b5de5;
     padding: 2rem 1rem 1rem;
     text-align: center;
@@ -203,13 +203,15 @@ footer {
 }
 
 .container {
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 2rem;
+    max-width: 1000px; 
+    margin: 60px auto; 
+    padding: 3rem;
     background-color: #1e1e2f;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    border-radius: 16px; 
+    box-shadow: 0 0 35px rgba(138, 43, 226, 0.25), 
+                0 8px 20px rgba(0, 0, 0, 0.5); 
     text-align: left;
+    border: 2px solid rgba(138, 43, 226, 0.3);
 }
 
 .container h1 {
@@ -419,4 +421,16 @@ code {
     .contato-conteudo {
         flex-direction: column;
     }
+}
+
+/*Controle-de-gestões*/
+.iframe-na-moldura-notebook {
+    position: absolute;
+    top: 71.2%; 
+    left: 16.1%;
+    width: 68%;
+    height: 95.2%;
+    border: none;
+    z-index: 1; 
+    border-radius: 6px;
 }
